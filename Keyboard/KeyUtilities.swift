@@ -28,3 +28,16 @@ func keyLabelOffsetForCharacter(character: String, font: UIFont) -> CGFloat {
     }
     return 1.0
 }
+
+func fontForKeyWithText(keyText: String, keytype: Key.KeyType) -> UIFont {
+    if keytype == Key.KeyType.Character && keyText == keyText.lowercaseString {
+        if #available(iOSApplicationExtension 8.2, *) {
+            return UIFont.systemFontOfSize(24.5, weight: UIFontWeightLight)
+        }
+        return UIFont.systemFontOfSize(24)
+    }
+    else if smallPunctuation.contains(keyText) {
+        return UIFont.systemFontOfSize(24)
+    }
+    return UIFont.systemFontOfSize(22)
+}

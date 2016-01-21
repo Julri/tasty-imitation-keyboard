@@ -429,7 +429,7 @@ class KeyboardLayout: NSObject, KeyboardKeyProtocol {
                 key.label.adjustsFontSizeToFitWidth = true
                 key.label.font = key.label.font.fontWithSize(16)
             default:
-                key.label.font = key.label.font.fontWithSize(22)
+                key.label.font = fontForKeyWithText(key.text, keytype: model.type)
             }
             
             // label inset
