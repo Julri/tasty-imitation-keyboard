@@ -33,7 +33,7 @@ class KeyboardKey: UIControl {
     var text: String {
         didSet {
             self.label.text = text
-            self.label.frame = CGRectMake(self.labelInset, self.labelInset, self.bounds.width - self.labelInset * 2, self.bounds.height - self.labelInset * 2)
+            self.setLabelFrame()
             self.redrawText()
         }
     }
@@ -56,7 +56,7 @@ class KeyboardKey: UIControl {
     var labelInset: CGFloat = 0 {
         didSet {
             if oldValue != labelInset {
-                self.label.frame = CGRectMake(self.labelInset, self.labelInset, self.bounds.width - self.labelInset * 2, self.bounds.height - self.labelInset * 2)
+                self.setLabelFrame()
             }
         }
     }
@@ -206,7 +206,7 @@ class KeyboardKey: UIControl {
         CATransaction.setDisableActions(true)
         
         self.background.frame = self.bounds
-        self.label.frame = CGRectMake(self.labelInset, self.labelInset, self.bounds.width - self.labelInset * 2, self.bounds.height - self.labelInset * 2)
+        self.setLabelFrame()
         
         self.displayView.frame = boundingBox
         self.shadowView.frame = boundingBox
@@ -470,6 +470,10 @@ class KeyboardKey: UIControl {
             
             self.popupDirection = nil
         }
+    }
+    
+    func setLabelFrame() {
+        self.label.frame = CGRectMake(self.labelInset, self.labelInset, self.bounds.width - self.labelInset * 2, self.bounds.height - self.labelInset * 2 - keyLabelOffsetForCharacter(self.text, font: self.label.font))
     }
 }
 
