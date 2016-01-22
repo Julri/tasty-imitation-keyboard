@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0D3687251C50F361007622D3 /* KeyUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3687241C50F361007622D3 /* KeyUtilities.swift */; };
+		0D3687271C525153007622D3 /* AutocorrectBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3687261C525153007622D3 /* AutocorrectBanner.swift */; };
+		0D3687291C525164007622D3 /* AutocorrectKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3687281C525164007622D3 /* AutocorrectKeyboard.swift */; };
 		4E00A6E5197183EE009414F2 /* KeyboardKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E807DC81946209600D875D1 /* KeyboardKey.swift */; };
 		4E3B5A941A0654A8003366F6 /* KeyboardInputTraits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3B5A931A0654A8003366F6 /* KeyboardInputTraits.swift */; };
 		4E52A6D21A06A61F006A08CE /* ImageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E52A6D11A06A61F006A08CE /* ImageKey.swift */; };
@@ -97,6 +99,8 @@
 
 /* Begin PBXFileReference section */
 		0D3687241C50F361007622D3 /* KeyUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyUtilities.swift; sourceTree = "<group>"; };
+		0D3687261C525153007622D3 /* AutocorrectBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutocorrectBanner.swift; sourceTree = "<group>"; };
+		0D3687281C525164007622D3 /* AutocorrectKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutocorrectKeyboard.swift; sourceTree = "<group>"; };
 		4E3B5A931A0654A8003366F6 /* KeyboardInputTraits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInputTraits.swift; sourceTree = "<group>"; };
 		4E52A6D11A06A61F006A08CE /* ImageKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageKey.swift; sourceTree = "<group>"; };
 		4E52A6D31A06A626006A08CE /* ExtraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraView.swift; sourceTree = "<group>"; };
@@ -200,6 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				4E6AEE4B19D246D700931E8F /* Catboard.swift */,
+				0D3687261C525153007622D3 /* AutocorrectBanner.swift */,
+				0D3687281C525164007622D3 /* AutocorrectKeyboard.swift */,
 				4EEFD78819E0DC6B004D4974 /* CatboardBanner.swift */,
 			);
 			name = Demo;
@@ -469,6 +475,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D3687291C525164007622D3 /* AutocorrectKeyboard.swift in Sources */,
+				0D3687271C525153007622D3 /* AutocorrectBanner.swift in Sources */,
 				4E52A6D21A06A61F006A08CE /* ImageKey.swift in Sources */,
 				4E52A6D41A06A626006A08CE /* ExtraView.swift in Sources */,
 				0D3687251C50F361007622D3 /* KeyUtilities.swift in Sources */,
